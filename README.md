@@ -2,6 +2,11 @@
 Program is given in debug_exam.py and Instructions are given in ReadMe file.
 # Fork the repository and commit the changes.
 # Answers should be given for all three questions here.
+5a]
+data1 = {1: 4, 3: 3, 4: 4}
+data2 = [[1, 2], [2, 2], [3, 3], [4, 9]]
+The bug in the program is it is not appending the key value pair which is not present in data1.
+5b]
 def uniqueUpdate(data1, data2):
     # Initially empty dictionary
     dupKeys = {}
@@ -30,4 +35,18 @@ def uniqueUpdate(data1, data2):
             data1[k] = v2
     return dupKeys
     
+ 5c]
+ data1 = {1: 4, 3: 3, 4: 4}
+ data2 = [[1, 2], [2, 2], [3, 2], [4, 9]]
+ output:
+    {2: 2}
+    [[1, 2], [2, 2], [3, 2], [4, 9]]
+    {1: [4, 2], 3: [3, 2], 4: [4, 9]}
+    
+data1 = {1: 4, 3: 3, 4: 4, 5:1}
+data2 = [[1, 2], [2, 2], [3, 2], [4, 9]]
+output:
+    {5: 1, 2: 2}
+    [[1, 2], [2, 2], [3, 2], [4, 9]]
+    {1: [4, 2], 3: [3, 2], 4: [4, 9]}
     
